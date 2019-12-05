@@ -27,6 +27,7 @@ class ImportSource extends ImportSourceHook
                         'mac' => $currentMac,
                         'host' => $currentHost,
                     ];
+		    $currentIp = $currentMac = $currentHost = null;
                 }
                 $currentIp = $m[2];
                 $currentHost = $m[1];
@@ -38,6 +39,7 @@ class ImportSource extends ImportSourceHook
                         'mac' => $currentMac,
                         'host' => $currentHost,
                     ];
+		    $currentIp = $currentMac = $currentHost = null;
                 }
                 if ($requireHost === 'y') {
                     $currentMac = null;
